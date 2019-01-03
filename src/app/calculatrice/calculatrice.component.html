@@ -1,0 +1,55 @@
+<div id="calc">
+    <table cellpadding="0" cellspacing="0" ng-controller="MainCtrl">
+        <!-- <tr>
+            <td colspan="4">
+                <Label text="OPERATION" colSpan="4" class="operation affichage">Opération</Label>
+            </td>
+        </tr> -->
+        
+        <tr>
+            <td colspan="4" class="affichage">
+                <div class="operation afficheOpResult">{{operation}}&nbsp;</div>
+                <div class="result afficheOpResult">{{resultat}}</div>
+            </td>
+        </tr>
+        <tr class="ligneVide"></tr>
+        <tr>
+            <td class="touche" (click)='calculRacine()'><i class="fas fa-square-root-alt"></i></td>
+            <td class="touche" (click)='calculCarre()'><i class="fas fa-superscript"></i></td>
+            <td class="touche" (click)='calculPoucent()'><i class="fas fa-percentage"></i></td>
+            <td class="touche" (click)="undo()"><i class="fas fa-backspace"></i></td>
+        </tr>
+        <tr>
+            <!-- <td colspan="2" class="touche" (click)="undo()"><i class="fas fa-backspace"></i></td> -->
+            <td class="touche" (click)='recupOp("(")' >(</td>
+            <td class="touche" (click)='recupOp(")")'>)</td>
+            <td class="touche" (click)="clearAll()">C</td>
+            <td class="touche_op" (click)='recupOp("/")'><i class="fas fa-divide"></i></td>
+        </tr>
+        <tr>
+            <td id="7" class="touche" (click)='recupOp("7")'>{{nb7}}</td>
+            <td class="touche" (click)='recupOp("8")'>{{nb8}}</td>
+            <td class="touche" (click)='recupOp("9")'>{{nb9}}</td>
+            <td class="touche_op" (click)='recupOp("*")'><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+            <td class="touche" (click)='recupOp("4")'>{{nb4}}</td>
+            <td class="touche" (click)='recupOp("5")'>{{nb5}}</td>
+            <td class="touche" (click)='recupOp("6")'>{{nb6}}</td>
+            <td class="touche_op" (click)='recupOp("-")'><i class="fas fa-minus"></i></td>
+        </tr>
+        <tr>
+            <td class="touche" (click)='recupOp("1")' >{{nb1}}</td>
+            <td class="touche" (click)='recupOp("2")'>{{nb2}}</td>
+            <td class="touche" (click)='recupOp("3")'>{{nb3}}</td>
+            <td class="touche_op" (click)='recupOp("+")'><i class="fas fa-plus"></i></td>
+        </tr>
+        <tr>
+            <td class="touche" (click)='recupOp("0")'>{{nb0}}</td>
+            <td class="touche" (click)='recupOp(".")'><i class="fas fa-circle"></i></td>
+            <!-- <td colspan="2" class="touche_op" (click)='calcul()'><i class="fas fa-equals"></i></td> -->
+            <td colspan="2" class="touche_op" (click)='calcul()'><i class="fas fa-equals"></i></td>
+        </tr>
+    </table>
+</div>
+  

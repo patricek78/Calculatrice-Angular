@@ -1,0 +1,80 @@
+#calc{
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+table{
+    font-family: Orbitron;
+    width: 100%;
+    height: 100%;
+    border-collapse:collapse;
+}
+
+table td{
+    border: solid 1px #000;
+}
+
+.touche{
+    background-color: #ececec;
+    text-align: center;
+    cursor: pointer;
+}
+.touche:hover{
+    background-color: #f9f8f8;
+}
+.touche:active{
+    background-color: #f59635;
+    color: #fff;
+}
+
+.touche_op{
+    background-color: #f77d00;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.touche_op:hover{
+    background-color: #f59635;
+}
+.touche_op:active{
+    background-color: #f9f8f8;
+    color: #000;
+}
+
+.affichage{
+    text-align: right;
+    height: 70px;
+    background-color: wheat;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+.ligneVide{
+    height: 20px;
+}
+
+.result{
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.operation{
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.afficheOpResult{
+    width: 9999px;
+    float: right;
+    margin-left: -9999px;
+}
+
+.fa-circle{
+    font-size: 5px;
+}
